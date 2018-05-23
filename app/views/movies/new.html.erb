@@ -1,0 +1,47 @@
+<h1>Add a new movie</h1>
+
+<%= form_with scope: :movie, url: movies_path, local: true do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+  </p>
+
+  <p>
+    <%= form.label :directed_by %><br>
+    <%= form.text_field :directed_by %>
+  </p>
+
+  <p>
+    <%= form.label :written_by %><br>
+    <%= form.text_field :written_by %>
+  </p>
+
+  <p>
+    <%= form.label :release_date %><br>
+    <%= form.text_field :release_date %>
+  </p>
+
+  <p>
+    <%= form.label :length %><br>
+    <%= form.text_field :length %>
+  </p>
+
+  <p>
+    <%= form.label :genre %><br>
+    <%= form.text_field :genre %>
+  </p>
+
+  <p>
+    <%= form.label :country %><br>
+    <%= form.text_field :country %>
+  </p>
+
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
