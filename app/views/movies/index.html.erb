@@ -1,0 +1,28 @@
+<h1>All movies</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Directed by</th>
+    <th>Written by</th>
+    <th>Release date</th>
+    <th>Length</th>
+    <th>Genre</th>
+    <th>Country</th>
+    <th>Description</th>
+    <th></th>
+  </tr>
+
+  <% @movies.each do |movie| %>
+    <tr>
+      <td><%= movie.title %></td>
+      <td><%= movie.directed_by %></td>
+      <td><%= movie.written_by %></td>
+      <td><%= movie.release_date %></td>
+      <td><%= movie.length %></td>
+      <td><%= movie.genre %></td>
+      <td><%= movie.country %></td>
+      <td><%= movie.description %></td>
+    </tr>
+  <% end %>
+</table>
