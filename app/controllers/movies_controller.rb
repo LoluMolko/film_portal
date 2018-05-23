@@ -17,7 +17,9 @@ class MoviesController < ApplicationController
     @movie = Movie.find(params[:id])
   end
 
-  def new; end
+  def new
+    @movie = Movie.new
+  end
 
   private
     def movie_params
